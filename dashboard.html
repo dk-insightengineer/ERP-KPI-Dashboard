@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>ERP Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .kpi {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .kpi-box {
+            background-color: white;
+            padding: 20px;
+            flex: 1;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .kpi-box h2 { margin: 0; font-size: 1.5rem; }
+        .charts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .chart-box {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        h1 { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>ERP Insight Dashboard</h1>
+    <div class="kpi">
+        <div class="kpi-box"><h2>Total Sales</h2><p><strong>150 000 zł</strong></p></div>
+        <div class="kpi-box"><h2>Average Lead Time</h2><p><strong>7.0 dni</strong></p></div>
+        <div class="kpi-box"><h2>Delayed Orders</h2><p><strong>12</strong></p></div>
+    </div>
+    <div class="charts">
+        <div class="chart-box"><h3>Top Selling Products</h3><img src="figures/top_products.png" alt="Top Products"></div>
+        <div class="chart-box"><h3>Delays by Week</h3><img src="figures/delays_by_week.png" alt="Delays"></div>
+        <div class="chart-box"><h3>Lead Time Distribution</h3><img src="figures/lead_time_distribution.png" alt="Lead Time"></div>
+        <div class="chart-box"><h3>Order Share by Supplier</h3><img src="figures/supplier_orders_pie.png" alt="Pie"></div>
+        <div class="chart-box" style="grid-column: span 2;"><h3>Inventory Heatmap</h3><img src="figures/inventory_heatmap.png" alt="Heatmap"></div>
+    </div>
+</body>
+</html>
